@@ -12,23 +12,29 @@ body{
     justify-content: center;
     background-color: black;
 }
-.greetings{
+.greetings {
     font-size: 6rem;
     font-weight: 900;
-}
-.greetings > span{
+    text-align: center; /* Center-align the text */
+  }
+  
+  .happy-birthday {
+    display: block; /* Place "Happy Birthday" on a new line */
+  }
+  
+  .greetings > span {
     animation: glow 2.5s ease-in-out infinite;
-}
-@keyframes glow{
-    0%, 100%{
-        color: #fff;
-        text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
+  }
+  @keyframes glow {
+    0%, 70% {
+      color: #fff;
+      text-shadow: 0 0 12px #39c6d6, 0 0 50px #39c6d6, 0 0 100px #39c6d6;
     }
-    10%, 90%{
-        color: #111;
-        text-shadow: none;
+    10%, 90% {
+      color: #111;
+      text-shadow: none;
     }
-}
+  }  
 .greetings > span:nth-child(2){
     animation-delay: .2s ;
 }
